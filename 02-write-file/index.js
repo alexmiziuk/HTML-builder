@@ -10,7 +10,7 @@ const filename = 'output.txt';
 
 
 function writeToFile(data) {
-	fileSystem.appendFile(filename, data + '\n', (err) => {
+  fileSystem.appendFile(filename, data + '\n', (err) => {
     if (err) throw err;
     console.log('Данные добавлены в файл');
   });
