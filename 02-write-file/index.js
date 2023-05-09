@@ -6,7 +6,7 @@ const rlInterface = readline.createInterface({
   output: process.stdout
 });
 
-const filename = 'output.txt';
+const filename = './02-write-file/output.txt';
 
 
 function writeToFile(data) {
@@ -28,3 +28,4 @@ rlInterface.on('line', (input) => {
     console.log('Введите следующий текст или введите "exit" для завершения.');
   }
 });
+
